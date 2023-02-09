@@ -38,32 +38,20 @@ log("[Snacks Lua] Successfully loaded.")
 
 submenu("Lua Options", "Snacks")
 submenu("Recovery", "Snacks")
-toggle(
-    "Snacks",
-    "Snack loop",
-    false,
-    "This will give you full snacks every second",
-    function(on)
-        loop = on
-        while loop do
-            SYSTEM.WAIT(1000)
-            addsnacks()
-        end
-    end
-)
-toggle(
-    "Snacks",
-    "Remove Snack loop",
-    false,
-    "This will remove your snacks every second",
-    function(on)
-        loop = on
-        while loop do
-            SYSTEM.WAIT(1000)
-            removesnacks()
-        end
-    end
-)
+toggle("Snacks", "Snack loop", false, "This will give you full snacks every second", function(on)
+    loop = on
+    while loop do
+		SYSTEM.WAIT(1000)
+        addsnacks()
+	end
+end)
+toggle("Snacks", "Remove Snack loop", false, "This will remove your snacks every second", function(on)
+    loop = on
+    while loop do
+		SYSTEM.WAIT(1000)
+        removesnacks()
+	end
+end)
 
 button(
     "Snacks",
