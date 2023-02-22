@@ -12,7 +12,7 @@ end
 
 function reset()
     STAT_SET_INT("CASINO_CHIPS_PUR_GD", 0) ---[[chips the player has purchased]]---
-    STAT_SET_INT("CASINO_CHIPS_PUR_GD", 0) ---[[chips the player has won by betting]]---
+    STAT_SET_INT("CASINO_CHIPS_WON_GD", 0) ---[[chips the player has won by betting]]---
 end
 
 function welcome()
