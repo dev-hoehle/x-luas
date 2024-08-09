@@ -1073,7 +1073,7 @@ input(
         Tv21 = 1000000
         notify("1 Million")
     end
-    SCRIPT.SET_GLOBAL_I(-156036296, Tv21)  
+    SCRIPT.SET_GLOBAL_I(282169, Tv21)  
     SET_PACKED_STAT_BOOL(15382, true)
     SET_PACKED_STAT_BOOL(9461, true)
     SCRIPT.SET_GLOBAL_I(2710428, 85)
